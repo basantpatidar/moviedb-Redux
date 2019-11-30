@@ -1,6 +1,7 @@
 const initialState = {
   searchTerm: '',
-  name: ''
+  name: '',
+  movieTitle: ''
 };
 
 const SearchReducer = (state = initialState, action) => {
