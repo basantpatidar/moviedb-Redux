@@ -1,6 +1,7 @@
 const initialState = {
   searchTerm: '',
-  name: ''
+  name: '',
+ year: '
 };
 
 const SearchReducer = (state = initialState, action) => {
