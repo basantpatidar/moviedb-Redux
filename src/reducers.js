@@ -1,15 +1,22 @@
+import { combineReducers } from 'redux';
+
 const initialState = {
   searchTerm: '',
-  name: ''
+  movies: []
 };
 
-const SearchReducer = (state = initialState, action) => {
+const searchReducer = (state = initialState, action) => {
   if (action.type === 'SEARCH_TERM_DISPATCH') {
-    const newState = {};
-    newState.name = state.name;
-    newState.searchTerm = action.payload;
     return { ...state, searchTerm: action.payload };
+    // {  movies: [], serachTerm: action.payload}
+  }
+  if (action.type === 'SET_MOVIES') {
+    return { ...state, movies: action.payload };
+    // { serachTerm: 'war', movies: [],  movies: action.payload }
   }
   return state;
 };
-export default SearchReducer;
+
+export default combineReducers({
+  searchReducer
+});
