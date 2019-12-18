@@ -20,7 +20,7 @@ export const setMovies = () => async (dispatch, getState) => {
     searchReducer: { searchTerm }
   } = getState();
   const res = await axios.get(
-    `http://www.omdbapi.com/?apiKey=4b574537&s=${searchTerm}`
+    `http://www.omdbapi.com/?apiKey=4b16516651637&s=${searchTerm}`
   );
   dispatch({
     type: 'SET_MOVIES',
