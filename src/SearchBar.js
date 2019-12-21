@@ -28,7 +28,7 @@ function SearchBar(props) {
               <h5>
                 {movie.Title} - {movie.Year}
               </h5>
-              <p>{movie.duration}</p>
+              <p>Movie Duration here</p>
               <img src={movie.Poster} alt={movie.Title} />
             </div>
           ))}
