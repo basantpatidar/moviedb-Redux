@@ -2,8 +2,7 @@ import { combineReducers } from 'redux';
 
 const initialState = {
   searchTerm: '',
-  movies: [],
-  moviePic: ''
+  movies: []
 };
 
 const searchReducer = (state = initialState, action) => {
