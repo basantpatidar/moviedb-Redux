@@ -6,6 +6,8 @@ function SearchBar(props) {
   const { searchTerm = '', movies = [] } = props.searchReducer;
   const handleChange = event => {
     props.searchTermDispatch(event.target.value);
+    console.log(event);
+
     // props.setMovies();
   };
 
