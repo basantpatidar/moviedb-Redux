@@ -6,8 +6,6 @@ function SearchBar(props) {
   const { searchTerm = '', movies = [] } = props.searchReducer;
   const handleChange = event => {
     props.searchTermDispatch(event.target.value);
-
-    // props.setMovies();
   };
 
   const handleClick = event => {};
@@ -42,9 +40,3 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, actions)(SearchBar);
-
-// Movie API, based on searchterm make an api call using 'axios' and store it in state and dispaly it in component.
-// Redux logger -
-// Redux chrome Extension config
-// Redux Thunk
-// How to use environmental Variables
