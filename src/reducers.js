@@ -2,8 +2,7 @@ import { combineReducers } from 'redux';
 
 const initialState = {
   searchTerm: '',
-  movies: [],
-  title: movie.title
+  movies: []
 };
 
 const searchReducer = (state = initialState, action) => {
@@ -18,7 +17,7 @@ const searchReducer = (state = initialState, action) => {
   if (action.type === 'GET_MOVIES') {
     return { ...state, movies: action.payload };
   }
-  
+
   return state;
 };
 
