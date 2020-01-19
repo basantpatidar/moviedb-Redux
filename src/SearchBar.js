@@ -6,7 +6,7 @@ function SearchBar(props) {
   const { searchTerm = '', movies = [] } = props.searchReducer;
   const handleChange = event => {
     props.searchTermDispatch(event.target.value);
-    // console.log(event);
+    console.log(event);
 
     // props.setMovies();
   };
@@ -14,6 +14,8 @@ function SearchBar(props) {
   const handleClick = event => {
     console.log(event.target.value);
   };
+
+  //Need to add Year filter
 
   return (
     <div>
