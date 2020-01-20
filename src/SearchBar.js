@@ -15,7 +15,7 @@ function SearchBar(props) {
     console.log(event.target.value);
   };
 
-  //Need to add Year filter
+  //Implement add Year filter and season search
 
   return (
     <div>
@@ -26,6 +26,7 @@ function SearchBar(props) {
         value={searchTerm}
         onChange={handleChange}
       />
+      <imput type="text" name="year" />
       <button onClick={handleClick}>Submit </button>
       <>
         {movies &&
