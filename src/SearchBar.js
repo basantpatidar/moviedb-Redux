@@ -25,8 +25,9 @@ function SearchBar(props) {
         name="movieName"
         value={searchTerm}
         onChange={handleChange}
-      />
-      <imput type="text" name="year" />
+      />{' '}
+      <br></br>
+      <input type="text" name="year" />
       <button onClick={handleClick}>Submit </button>
       <>
         {movies &&
