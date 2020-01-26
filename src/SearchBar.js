@@ -27,7 +27,7 @@ function SearchBar(props) {
         onChange={handleChange}
       />{' '}
       <br></br>
-      <input type="text" name="year" />
+      <input type="text" name="year" onChange={handleChange} />
       <button onClick={handleClick}>Submit </button>
       <>
         {movies &&
